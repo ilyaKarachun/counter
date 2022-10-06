@@ -1,0 +1,12 @@
+.screen {
+    font-size: 24px;
+}
+
+.maxScreenValue {
+    color: red;
+}
+
+.incorrectValue {
+    font-size: 20px;
+    color: red;
+}
