@@ -61,7 +61,7 @@ export const counterReducer = (state: initialStateType = initialState, action: T
             return {...state, minValue: action.minValue}
         }
         case "MAX-VALUE": {
-            return { ...state, maxValue: action.maxValue}
+            return {...state, maxValue: action.maxValue}
         }
         case "SET-MAX-MIN-VALUE": {
             return {...state, minValue: action.minValue, screenValue: action.minValue}
