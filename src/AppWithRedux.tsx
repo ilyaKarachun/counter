@@ -28,8 +28,8 @@ function AppWithRedux() {
         let minValueAsString = localStorage.getItem("minValue")
         let maxValueAsString = localStorage.getItem("maxValue")
         if(minValueAsString !== null && maxValueAsString !== null) {
-            // dispatchMinValueReducer(JSON.parse(minValueAsString))
-            // dispatchMaxValueReducer(JSON.parse(maxValueAsString))
+            dispatch(minValueAC(JSON.parse(minValueAsString)))
+            dispatch(maxValueAC(JSON.parse(maxValueAsString)))
         }
     }, [])
 
